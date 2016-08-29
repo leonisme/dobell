@@ -10,7 +10,12 @@
     <!--[if IE 7]>
     <link rel="stylesheet" href="css/font-awesome-ie7.min.css">
     <![endif]-->
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/index2.css">
+    <!--for react-->
+    <script src="build/react-with-addons.js"></script>
+    <script src="build/react-dom.js"></script>
+    <script src="build/browser.min.js"></script>
+    <script src="js/loading.js"></script>
 </head>
 <body>
 <div class="header">
@@ -19,10 +24,10 @@
 
     <ul class="header-nav">
             <li><a href="index.html" target="_self" >首页</a></li>
-            <li><a href="page2.html" target="_self">关于我们</a></li>
-            <li><a href="page3.html" target="_self">开放合作</a></li>
-            <li><a href="page4.html" target="_self">联系我们</a></li>
-            <li><a href="page5.html" target="_self">团队荣誉</a></li>
+            <li><a href="http://www.loveahu.com/page2.html" target="_self">关于我们</a></li>
+            <li><a href="http://www.loveahu.com/page3.html" target="_self">开放合作</a></li>
+            <li><a href="http://www.loveahu.com/page4.html" target="_self">联系我们</a></li>
+            <li><a href="http://www.loveahu.com/page5.html" target="_self">团队荣誉</a></li>
         </ul>
 
 
@@ -39,47 +44,42 @@
     <div class="menu-wrap">
     <ul class="menu-nav">
         <li><a href="index.html" target="_self" >首页</a></li>
-        <li><a href="page2.html" target="_self">关于我们</a></li>
-        <li><a href="page3.html" target="_self">开放合作</a></li>
-        <li><a href="page4.html" target="_self">联系我们</a></li>
-        <li><a href="page5.html" target="_self">团队荣誉</a></li>
+        <li><a href="http://www.loveahu.com/page2.html" target="_self">关于我们</a></li>
+        <li><a href="http://www.loveahu.com/page3.html" target="_self">开放合作</a></li>
+        <li><a href="http://www.loveahu.com/page4.html" target="_self">联系我们</a></li>
+        <li><a href="http://www.loveahu.com/page5.html" target="_self">团队荣誉</a></li>
     </ul>
     </div>
 </div>
 <div class="phone">
-    <img src="images/iPhone.png">
+    <div class="iPhone"><div class="phoneFrame-top"></div>
+        <div class="phoneFrame-bottom"></div>
+        <div class="phoneFrame-left"></div>
+        <div class="phoneFrame-right"></div>
+        <div class="inset"></div>
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+        <div class="line4"></div>
+        <div class="button1"></div>
+        <div class="button2"></div>
+        <div class="button3"></div>
+        <div class="button4"></div>
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="rect"></div>
+        <div class="home"></div></div>
+    <div class="loading">
+        <span><i class="fa fa-spinner fa-pulse fa-2x fa-fw"></i></span>
+        <span class="sr-only tip">Loading...</span>
+    </div>
     <div class="screenshot0">
         <div class="blackScreen"></div>
     </div>
     <div class="screenshot1">
-        <img class="a1" src="images/a1.png">
-        <img class="a2 screen1" src="images/a2.png">
-        <img class="a3 screen1" src="images/a3.png">
-        </div>
-    <div class="screenshot2">
-        <img class="b1 screen2" src="images/b1.png">
-        <img class="b2 screen2" src="images/b2.png">
-        <img class="b3 screen2" src="images/b3.png">
-        <img class="b4 screen2" src="images/b4.png">
+        <img class="a1" src="images/face.png">
     </div>
-    <div class="screenshot3">
-        <img class="c1 screen3" src="images/c1.png">
-        <img class="c2 screen3" src="images/c2.png">
-        <img class="c3 screen3" src="images/c3.png">
-        <img class="c4 screen3" src="images/c4.png">
-    </div>
-    <div class="screenshot4">
-        <img class="d1 screen4" src="images/d1.png">
-        <img class="d2 screen4" src="images/d2.png">
-        <img class="d3 screen4" src="images/d3.png">
-        <img class="d4 screen4" src="images/d4.png">
-    </div>
-    <div class="screenshot5">
-        <img class="e1 screen5" src="images/e1.png">
-        <img class="e2 screen5" src="images/e2.png">
-        <img class="e3 screen5" src="images/e3.png">
-        <img class="e4 screen5" src="images/e4.png">
-    </div>
+    <div id="container"></div>
 </div>
 <div id="fullpage">
     <div id="section1" class="section">
@@ -90,14 +90,14 @@
         <div class="buttons">
             <ul>
                 <li>
-            <a href="#download">
+            <a href="http://www.loveahu.com/#download">
                 <div class="button">
                     <span>软件下载</span>
             </div>
             </a>
                 </li>
                 <li>
-            <a href="page4.html">
+            <a href="http://www.loveahu.com/page4.html">
                 <div class="button">
                     <span>联系我们</span>
             </div>
@@ -105,7 +105,7 @@
                 </li>
             </ul>
             </div>
-        <div class="down-button"><i class="icon-angle-down icon-3x"></i></div>
+        <div class="down-button"><i class="fa fa-angle-down fa-3x"></i></div>
     </div>
     <div id="section2" class="section">
         <div class="text text2">
@@ -153,15 +153,15 @@
         </div>
         <ul class="links">
             <li data-href="http://itunes.apple.com/cn/app/kou-dai-xiao-an/id879838253?l=zh&ls=1&mt=8">
-<img src="images/apple.png" width="41" height="50" class="apple">
+<i class="fa fa-apple fa-3x"></i>
                 <div class="download-label"><span>Apple</span></div>
             </li>
             <li data-href="http://1.xinfeng.sinaapp.com/apk/ahu_beta_4.2.0.0102.apk">
-                <img src="images/android.png" width="44" height="48" class="android">
+                <i class="fa fa-android fa-3x"></i>
                 <div class="download-label"><span>Android</span></div>
             </li>
             <li data-href="http://v.youku.com/v_show/id_XODU1NTYwOTg0.html">
-                <img src="images/youku.png" width="43" height="43" class="youku">
+                <i class="fa fa-play-circle-o fa-3x"></i>
                 <div class="download-label"><span>video</span></div>
             </li>
             <li>
@@ -175,6 +175,7 @@
         </div>
     </div>
 </div>
-<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/index2.js"></script>
+<script type="text/babel" src="js/react.js"></script>
 </body>
 </html>
