@@ -135,6 +135,24 @@ $(function(){
     })
 })
 
+//music
+$(function () {
+    if(document.body.clientWidth>980){
+        $('audio').removeAttr('autoplay');
+    }else {
+        $('audio').attr('autoplay');
+    }
+    $('.music').click(function () {
+        if($('.music').hasClass('round')){
+            $(this).removeClass('round');
+            $('audio')[0].pause();
+        }else {
+            $(this).addClass('round');
+            $('audio')[0].play();
+        }
+    })
+})
+
 
 
 
